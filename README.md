@@ -6,7 +6,8 @@ In this example we will be using Reactjs and [Amplify](https://aws.amazon.com/am
 This is just the documentation for the authentication demo, the actual source are located in a differrent private repo, found [here](https://github.com/Lextherius/login-demo-source).
 
 
-#### Configuration and Setup
+------
+#### CONFIGURATION AND SETUP
 ------
 1. Create a React project call login-demo
     ```
@@ -93,7 +94,8 @@ This is just the documentation for the authentication demo, the actual source ar
 10. Finally point the host you configure in **step 6** to the ``/build/`` directory
 
 
-#### Testing the login-demo app
+------
+#### TESTING THE CONFIGURED APP
 ------
 1. Once you have completed the setup above, now it is time to test it out. Just go to the domain you set up previously (eg. ``https://login-demo.loc``) and you shall be greeted with the following screen.
     ![Appendix 1](/screenshot/appendix_01.PNG?raw=true "Appendix 1")
@@ -104,7 +106,9 @@ This is just the documentation for the authentication demo, the actual source ar
 5. Once done, open up your browser's console, then click on the check user button, if it return the user object then you know the user is authenticated.
     ![Appendix 2](/screenshot/appendix_03.PNG?raw=true "Appendix 3")
 
-#### What's next?
+
+______
+#### WHAT'S NEXT?
 ------
 Now that you have successfully authenticate the user, it then up to your system to :
 1. store the access and refresh token
