@@ -3,7 +3,7 @@
 Designs.ai will be utilizing [AWS Cognito](https://aws.amazon.com/cognito/) to manage our users identity.
 In this example we will be using Reactjs and [Amplify](https://aws.amazon.com/amplify/) the official javascript-sdk for AWS.
 
-By the way this is just the documentation for the authentication, the actual config file and source are in a differrent private repo found [here](https://github.com/Lextherius/login-demo-source).
+The way this is just the documentation for the authentication demo, the actual source are located in a differrent private repo, found [here](https://github.com/Lextherius/login-demo-source).
 
 
 #### Configuration and Setup
