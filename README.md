@@ -7,6 +7,7 @@ This is just the documentation for the authentication demo, the actual source ar
 
 
 #### Configuration and Setup
+------
 1. Create a React project call login-demo
     ```
     npx create-react-app login-demo
@@ -93,6 +94,7 @@ This is just the documentation for the authentication demo, the actual source ar
 
 
 #### Testing the login-demo app
+------
 1. Once you have completed the setup above, now it is time to test it out. Just go to the domain you set up previously (eg. ``https://login-demo.loc``) and you shall be greeted with the following screen.
     ![Appendix 1](/screenshot/appendix_01.PNG?raw=true "Appendix 1")
 2. After clicking on the signin button, you shall be redirected to the following login screen
@@ -103,6 +105,7 @@ This is just the documentation for the authentication demo, the actual source ar
     ![Appendix 2](/screenshot/appendix_03.PNG?raw=true "Appendix 3")
 
 #### What's next?
+------
 Now that you have successfully authenticate the user, it then up to your system to :
 1. store the access and refresh token
 2. use this authentication mechanism to tied back with your own user management system to authorize their access (I am sure your system have a way to flag the user as signed in and allow them access to features that only signed in user have access to. If not.... then start building one.)
