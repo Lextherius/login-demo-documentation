@@ -83,10 +83,10 @@ This is just the documentation for the authentication demo, the actual source ar
     This step is really important, otherwise the following step might not work correctly.
     Please also take note that you will need to use ssl, it is fine to use a self generated cert for testing purpose but it will need to go through the https nevertheless.
 7. Modify the ``/src/aws-config.js`` as needed
-    **oauth.redirectSignIn** - must point to the domain that configure in **step #6**
-    **oauth.redirectSignOut** - must point to the domain that configure in **step #6**
-    **cookieStorage.storage** - must be set to the domain that configure in **step #6**
-8. After that please let us know the domain that you have choose to use in **step #6** and we will whitelist that domain.
+   + **oauth.redirectSignIn** - must point to the domain that configure in **step #6**
+   + **oauth.redirectSignOut** - must point to the domain that configure in **step #6**
+   + **cookieStorage.storage** - must be set to the domain that configure in **step #6**
+8. After that please let us know the domain that you have chosen to use in **step #6** and we will whitelist that domain.
 9. Build the React project
     ```
     npm run build
