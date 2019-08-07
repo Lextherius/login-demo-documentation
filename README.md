@@ -17,14 +17,14 @@ This is just the documentation for the authentication demo, the actual source ar
     ```
     npm install aws-amplify
     ```
-3. then add the following code into your index.js
+3. Then add the following code into your index.js
     ```javascript
     // src/index.js
     import Amplify from 'aws-amplify'
     import config from './aws-config'
     Amplify.configure(config)
     ```
-4. replace your app.js with the following code
+4. Replace your app.js with the following code
     ```javascript
     // src/App.js
     // import useEffect hook
@@ -79,14 +79,14 @@ This is just the documentation for the authentication demo, the actual source ar
     export default App
     ```
 5. Copy the provided aws-config.js and paste it into the ``/src`` directory
-6. Next, configure a hostname for your this login-demo app, for example ``https://login-demo.loc``
+6. Next, configure a hostname for your login-demo app. eg. ``https://login-demo.loc``
     This step is really important, otherwise the following step might not work correctly.
-    Please also take note that you will need to use ssl, it is fine to use a self generated cert for testing purpose but it will need to go through the https nevertheless.
+    Please also take note that you will need to make use of SSL, it is fine to use a self generated cert for this testing purposes but it will need to go through the https nevertheless.
 7. Modify the ``/src/aws-config.js`` as needed
-   + **oauth.redirectSignIn** - must point to the domain that is configured in **step #6**
-   + **oauth.redirectSignOut** - must point to the domain that is configured in **step #6**
-   + **cookieStorage.storage** - must be set to the domain that is configured in **step #6**
-8. After that please let us know the domain that you have chosen to use in **step #6** and we will whitelist that domain.
+   + **oauth.redirectSignIn** - must be set to the domain which you configured in **step #6**
+   + **oauth.redirectSignOut** - must be set to the domain which you configured in **step #6**
+   + **cookieStorage.storage** - must be set to the domain which you configured in **step #6**
+8. After that let us know the domain that you have chosen to use in **step #6** and we will whitelist that domain.
 9. Build the React project
     ```
     npm run build
@@ -97,20 +97,20 @@ This is just the documentation for the authentication demo, the actual source ar
 ------
 #### TESTING THE CONFIGURED APP
 ------
-1. Once you have completed the setup above, now it is time to test it out. Just go to the domain you set up previously (eg. ``https://login-demo.loc``) and you shall be greeted with the following screen.
+1. Once you have completed the setup above, now it is time to test it out. Just go to the domain which you had set up previously (eg. ``https://login-demo.loc``) and you shall be greeted with the following screen.
     ![Appendix 1](/screenshot/appendix_01.PNG?raw=true "Appendix 1")
-2. After clicking on the signin button, you shall be redirected to the following login screen
+2. After clicking on the signin button, you will be redirected to the login screen.
     ![Appendix 2](/screenshot/appendix_02.PNG?raw=true "Appendix 2")
-3. Create an account if you don't have an one already, otherwise just login
-4. Once login you will be redirected back to the previous screen and Amplify should automatically call the API to retrieve the tokens using the Authorize code returned by the login process.
-5. Once done, open up your browser's console, then click on the check user button, if it return the user object then you know the user is authenticated.
+3. Create an account if you don't already have one, otherwise just login.
+4. Once login you will be brought back to the previous screen and Amplify should automatically call the API to retrieve the tokens using the Authorize code returned by the login process.
+5. Finally, open up your browser's console, then click on the check user button, if it manage to fetch the user's object then you know the user is authenticated.
     ![Appendix 2](/screenshot/appendix_03.PNG?raw=true "Appendix 3")
 
 
 ______
 #### WHAT'S NEXT?
 ------
-Now that you have successfully authenticate the user, it then up to your system to :
-1. store the access and refresh token
-2. use this authentication mechanism to tied back with your own user management system to authorize their access (I am sure your system have a way to flag the user as signed in and allow them access to features that only signed in user have access to. If not.... then start building one.)
+Now that you have successfully authenticate the user, it is then up to your system to :
+1. Store the access and refresh token,
+2. Use this authentication mechanism to tied back to your own user management system to authorize their access (I am sure your system would have a way to flag the user as signed in and allow them access to features that only signed in user would have access to. If not.... then start building one.)
 3. If you have any questions, please feel free to contact me. My name is Alex. If you don't already have my contact, then you are probably not the intended audience of this demo.
